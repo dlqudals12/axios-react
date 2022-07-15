@@ -3,8 +3,8 @@
 - axios는 서버에 요청을 보내고 서버로부터 응답이 오면 제대로 응답이 왔을 때와 못 왔을 때를 구분하여 처리한다. 서버에 요청얼 보내을 때 응답이 오기까지 시간이 걸리브로 서버에 보내는 요청은 비동기 처리를 해주며, 그 이후에 응답을 바탕으로 처리하는 과정은 .then이나 await를 이용한다.
 
 - -정석적인 axios방식
-- ex) <br>
-axios({ <br>
+code1 ex) <br>
+code2 axios({ <br>
   method: "get' <br>
   url: "url", <br>
   responseType: "type" <br>
@@ -12,8 +12,8 @@ axios({ <br>
   //response Action <br>
 }); <br>
 
-- get
-async function getDate() { <br>
+code1 get
+code2 async function getDate() { <br>
   try { <br>
 	const response = await axios.get('url주소'); <br>
 	console.log(response);     <br> 
