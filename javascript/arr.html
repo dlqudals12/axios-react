@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+
+</div>
+
+<script>
+    const arr = [
+        {num: 1, color: "red"},
+        {num: 2, color: "black"},
+        {num: 3, color: "blue"},
+        {num: 4, color: "green"},
+        {num: 5, color: "blue"}
+    ];
+
+    const arr2 = [
+        {num: 6, color: "green"},
+        {num: 7, color: "blue"}
+    ];
+
+
+    //함수 안에서  return사용가능
+    const newArr = arr.map((elm) => {
+        return elm;
+    })
+
+    //foreach 반복문 조회
+    const fore = arr.forEach((erm) => {
+        console.log(erm)
+    });
+
+    //콜백 함수를 전달해서 green을 찾아줌(일치하는 것이 있을 때 가장 먼져있는것)
+    console.log(arr.findIndex((ar) => {
+        ar.color === "green";
+    }))
+
+    //배열을 연결함(react에서 create문에 자주나옴)
+    console.log(arr.concat(arr2));
+
+    //요소자체를 반환함
+    const element = arr.find((elm) => {
+        return elm.color === "blue";
+    })
+    console.log(element);
+
+    //모든 조건에 맞는 요소를 반환함
+    const filte = arr.filter((elm) => {
+        return elm.color === "blue";
+    });
+    console.log(filte);
+
+    //a와 b-1사이를 반환
+    let b, a = 0;
+    const slic = arr.slice(a, b);
+    console.log(slic(0, 2));
+
+
+
+
+
+</script>
+</body>
+</html>
