@@ -7,8 +7,10 @@ function App() {
   return (
     <>
       <h1>{bears}</h1>
+      
       <button onClick={increasePopulation}>OneUp</button>
       <button onClick={removeEventListener}>remove all</button>
+      
     </>
   );
 }
